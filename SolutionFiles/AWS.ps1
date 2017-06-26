@@ -1,16 +1,15 @@
 ﻿#Install-Module AWSPowerShell
-#Import-Module AWSPowerShell
-#Install-Module -Name AWSPowerShell.NetCore 
+Import-Module AWSPowerShell
 
 $ErrorActionPreference = "Stop"
 
+
 ## LOGIN
 $region    = "sa-east-1" #São Paulo
-$AccessKey = "ACCESS_KEY"
-$SecretKey = "SECRET_KEY"
+$AccessKey = "AKIAJR7Y3WT6FSKYQZRQ"
+$SecretKey = "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"
 
 Set-AWSCredential -AccessKey $AccessKey -SecretKey $SecretKey
-
 
 #Execs
 $msbuild = 'C:\Program Files (x86)\MSBuild\14.0\Bin\msbuild.exe'
@@ -115,3 +114,4 @@ Grant-EC2SecurityGroupIngress  -Region $region -GroupId $dbInstance.VpcSecurityG
 
 
 Write-Host "DONE, URL =>" $EBEnvironment.EndpointURL -ForegroundColor Black -BackgroundColor Green
+
