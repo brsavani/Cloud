@@ -6,8 +6,8 @@ $ErrorActionPreference = "Stop"
 
 ## LOGIN
 $region    = "sa-east-1" #São Paulo
-$AccessKey = "AKIAJR7Y3WT6FSKYQZRQ"
-$SecretKey = "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"
+$AccessKey = "Access_Key"
+$SecretKey = "Secret_Key"
 
 Set-AWSCredential -AccessKey $AccessKey -SecretKey $SecretKey
 
