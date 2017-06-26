@@ -7,4 +7,6 @@
     $AccessKey = "Access_Key"
     $SecretKey = "Secret_Key" 
 
-4. Execute the script.
+4. Execute the script in the PowerShell.
+
+5. Open the generated link in the script final.
